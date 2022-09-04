@@ -15,7 +15,7 @@
   "start": "node dist/app.js",
   "start:dev": "nodemon --exec babel-node src/app.js",
  },
- ```
+```
 
 ### Build: delete and transpile es6 code to es5 code
 ### Start: serve the compliled es5 code
