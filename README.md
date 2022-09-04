@@ -9,18 +9,21 @@
 ### npm i rimraf nodemon
 
 ## Package json scripts:
-``` "scripts": {
+```
+"scripts": {
   "build": "rimraf dist && babel src --out-dir dist  --copy-files",
   "start": "node dist/app.js",
   "start:dev": "nodemon --exec babel-node src/app.js",
- }, ```
+ },
+ ```
 
 ### Build: delete and transpile es6 code to es5 code
 ### Start: serve the compliled es5 code
 ### start dev: for dev env use bable core and live serve using nodemon
 
 ## Babel configurations in .babelrc file
-``` {
+```
+{
    "presets": [
      ["@babel/env", {
        "targets": {
@@ -32,4 +35,5 @@
      "@babel/plugin-proposal-class-properties",
      "@babel/plugin-proposal-object-rest-spread"
    ]
-} ```
+}
+```
